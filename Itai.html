@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAI - Instituto de Tecnologia</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Itai.css">
+
+</head>
+<body>
+
+    <div class="head">
+        
+        <div class="container  text-end p-2">
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+        </div>
+
+    </div>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+            <a href="" class="navbar-brand">
+                <img src="data:image/png;base64,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"></a>
+
+            <button 
+                class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menu-principal" >
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"data-bs-toggle="dropdown">Quem somos</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Sobre</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Áreas de Atuação</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Histórico</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Transparêcia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="nav-link">Soluções</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projetos</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Cadastro de Projetos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Projeos Desenvolvidos</a></li>
+                        </ul> 
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Parceiros</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Associados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Empresas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">IES</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="" class="dropdown-item">Organizações Representativas</a></li>
+                        </ul>
+                    
+                    </li>
+
+                    <li><a href="#" class="nav-link">Estágios</a></li>
+                    <li><a href="#" class="nav-link">Editoras</a></li>
+                    <li><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid destaque principal">
+            <div class="row">
+
+                <div class="col-5">
+
+                        <div class="destaque-texto">
+                            <h2 class="mt-5">Bem-vindos ao ITAI</h2>
+                            <h2>Instituto de Tecnologia Aplicada e Inovação</h2>
+                                <div>
+                                    <p>Nós somos uma Instituição Científica e Tecnológica com mais de 27 anos de atuação em pesquisas
+                                    e desenvolvimento de projetos e soluções inovadoras para região.</p>
+                                </div>
+
+                        </div>
+                </div>
+
+                <div class="col-7">
+        
+                    <img src="https://raw.githubusercontent.com/ferneres/Tarefa/main/itai_base_project-main/img-destaque.png" alt="">
+                    
+                </div>
+
+            </div>
+
+    </div>
+        <div class="dropdown-noticias noticias">
+            <h2>Notícias</h2>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                           
+                            <div class="col"></div>
+
+                            <div class="col">
+                                
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                    <img src="https://itai.org.br/noticias/wp-content/uploads/2023/04/apresentacaoAlessandra-768x346.png" class="noti" alt="img" draggable="false">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Diretora do ITAI, Profª. Dra. Alessandra Bussador, apresenta projeto na Imersão em Smart Cities PTI</h5>
+                                    <p class="card-text">Nesta terça-feira(25/04), a Diretora de Programas e Projetos do ITAI, Profª. Dra. Alessandra Bussador, apresentou o projeto ‘‘Diagnósticos e Indicadores aplicados a Smart Cities”’, na Imersão em Smart…</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col"> 
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                <img src="https://itai.org.br/noticias/wp-content/uploads/2023/05/Design-sem-nome-2-2-768x346.png" class="noti" alt="img" draggable="false">
+                                <div class="card-body">
+                                    <h5 class="card-title">ITAI participa de reunião com o novo Secretário de Turismo e Projetos Estratégicos de Foz do Iguaçu</h5>
+                                    <p class="card-text">Na última sexta-feira (28/04), a diretoria do ITAI, representada pelo Prof. Dr. Elias Garcia, Profª. Dra. Alessandra Bussador e Prof. José Sampaio de Castilha, participaram de uma reunião com novo Secretário…
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                <img src="https://itai.org.br/noticias/wp-content/uploads/2023/05/1%C2%B0-WORKSHOP-DE-TURISMO-INOVACAO-E-NEGOCIOS-4-768x346.png" class="noti" alt="img" draggable="false">
+                                <div class="card-body">
+                                    <h5 class="card-title">Itaipu completa 49 anos</h5>
+                                    <p class="card-text">Hoje é aniversário da nossa mantenedora, Itaipu Binacional. Nós, do Instituto de Tecnologia Aplicada e Inovação – ITAI, temos orgulho em fazer parte desta história de desenvolvimento sustentável e comprometimento com a responsabilidade social e ambiental.</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col"></div>
+
+                        </div>
+                  </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col"></div>
+
+                            <div class="col">
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                <img src="https://itai.org.br/noticias/wp-content/uploads/2023/05/1%C2%B0-WORKSHOP-DE-TURISMO-INOVACAO-E-NEGOCIOS-3-768x346.png" class="noti" alt="img" draggable="false">
+                                <div class="card-body">
+                                    <h5 class="card-title">O ITAI promove o 1° Workshop de Turismo, Inovação e Negócios</h5>
+                                    <p class="card-text">O evento acontecerá na Arena Inovação, em paralelo ao 18° Festival das Cataratas, de 31 de maio a 2 de junho 2023, no Rafain Palace Hotel & Convention, em Foz do Iguaçu – PR. Nosso 1° Workshop conectará você às inovações abordadas no setor turístico!</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                <img src="https://itai.org.br/noticias/wp-content/uploads/2023/05/1%C2%B0-WORKSHOP-DE-TURISMO-INOVACAO-E-NEGOCIOS-1-768x346.png" class="noti" alt="img" draggable="false">
+                                <div class="card-body">
+                                    <h5 class="card-title">ITAI realizará o 1° Workshop de Turismo, Inovação e Negócios</h5>
+                                    <p class="card-text">Convidamos você a participar do “1° Workshop de Turismo, Inovação e Negócios” que será realizado pelo Instituto de Tecnologia Aplicada e Inovação – ITAI. O Workshop tem o objetivo de conectar pessoas que pesquisam e vivenciam o turismo, proporcionando...</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card" style="width: 20rem; border-radius: 10px;">
+                                <img src="https://itai.org.br/noticias/wp-content/uploads/2023/05/Design-sem-nome-4-768x346.png" class="noti" alt="img" draggable="false">
+                                <div class="card-body">
+                                    <h5 class="card-title">ITAI participa da reunião do Iguassu Valey</h5>
+                                    <p class="card-text">Na última terça-feira (09/05), a Diretora de Programas e Projetos, Profª. Dra. Alessandra Bussador, participou da reunião do Iguassu Valey. O encontro teve como objetivo, apresentar as ações que acontecerão no “Summit Iguassu Valley”, um evento repleto...</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col"></div>
+
+                        </div>
+                    </div>
+    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>    
+
+            
+    </div>  
+
+    <div class="landing-solutions solucao">
+        <div class="row">
+            <h3> Nossas soluções</h3>
+        </div>
+        <p class="p">Oferecemos soluções personalizadas para sua empresa ou projeto.</p>
+        <div class="row">
+            <div class="col"></div>
+
+            <div class="col">
+                <div class="card" style="width: 20rem; border-radius: 10px;">
+                <img src="https://www.itai.org.br/static/media/p&dLanding.6aef0872.png" class="noti" alt="img" draggable="false">
+                <div class="card-body">
+                    <h4>P&amp;D+I</h4>
+                    <p>Desde 1996 temos como objetivo impulsionar o avanço tecnológico por meio de Projetos de Pesquisa, De...</p>
+                    <a href="#"> Saiba mais </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 20rem; border-radius: 10px;">
+                <img src="https://www.itai.org.br/static/media/consultancyLanding.d2155e91.png" class="noti" alt="img" draggable="false">
+                <div class="card-body">
+                    <h4>Consultorias</h4>
+                    <p>O ITAI atua para que empresas alcancem os melhores resultados por meio da Inovação Corporativa. Faze...</p>
+                    <a href="#"> Saiba mais </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 20rem; border-radius: 10px;">
+                <img src="https://www.itai.org.br/static/media/eventsLanding.975cddc4.png" class="noti" alt="img" draggable="false">
+                <div class="card-body">
+                    <h4>Cursos e Treinamentos</h4>
+                    <p>Nossos conteúdos de aprendizagem podem ser customizados sob medida para sua organização, por meio de...</p>
+                    <a href="#"> Saiba mais </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col"></div>
+        </div>
+    </div>
+    
+    <div class="clientes mt-5">
+        <h2>Clientes</h2>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/001.9e886e3a.png"  id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/002.321859d9.png"  id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/003.8303d6af.png"  id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+            </div>
+              <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/005.5b950c77.png" id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/006.96b56c88.png"  id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://www.itai.org.br/static/media/004.464a646a.png"  id="colaboradores" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+
+    <div class="contatos">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5 contactFooter">
+                <h3>Entre em Contato</h3>
+                <p><br> +55 (45) 3576-7114<br>contato@itai.org.br</p>
+                <p><br> Av. Tancredo Neves, 6731<br> 
+                Parque Tecnológico Itaipu
+                <br> Foz do Iguaçu/PR - CEP: 85.867-970<br>
+                Copyright © 2020 ITAI - Instituto de Tecnologia Aplicada e Inovação</p>
+            </div>
+            <div class="col-5 logo2">
+                    <img src="https://www.itai.org.br/static/media/logofooter.458ada70.png" alt="">
+                    <div class="container redes">
+                        <i class="bi bi-linkedin aimg5"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
